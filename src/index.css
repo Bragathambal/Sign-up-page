@@ -1,0 +1,120 @@
+.body-element{
+  
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 85px;
+  color: #dd26ce;
+  background-color: rgb(11, 134, 77);
+  font-size: 20px;
+  padding: 0.2rem;
+}
+h2{
+  text-align: center;
+}
+.signup-form{
+  max-width: 450px;
+  border-radius: 20px;
+  margin: auto;
+  background-color: cadetblue;
+  box-sizing: border-box;
+  padding: 40px;
+  color:rgb(116, 64, 1);
+  margin-top: 100px;
+}
+input[type=text],input[type=password]{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 10px;
+  background-color: azure;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  color: rgb(5, 81, 83);
+  border-radius: 5px;
+  margin: 5px;
+  font-weight: bold;
+}
+input[type=submit]{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 0;
+  margin-top: 30px;
+  outline: none;
+  border:none;
+  background-color: crimson;
+  opacity: 0.3;
+  border-radius: 20px;
+  font-size: 20px;
+  color:#fff;
+  cursor:pointer;
+  transition: 1s;
+}
+input[type=submit]:hover{
+  opacity: 1;
+}
+.btn{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 0;
+  margin-top: 30px;
+  outline: none;
+  border:none;
+  background-color: rgb(14, 9, 11);
+  opacity: 0.3;
+  border-radius: 20px;
+  font-size: 20px;
+  color:#fff;
+  cursor:pointer;
+  transition: 1s;
+}
+.btn:hover{
+  opacity: 1;
+}
+span{
+  color:red;
+  font-size: 14px;
+}
+
+.mobile-icon{
+  display: none;
+}
+@media screen and (max-width: 780px) {
+  .navbar{
+    display: none;
+  }
+  .nav-links{
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: rgb(146, 180, 196);
+    left: 0%;
+    top:75px;
+    transition: all o.5s ease-out;
+    width: 100%;
+    font-size: 25px;
+    color: crimson;
+
+  }
+ 
+  .signup,.about,.contact{
+    text-align: center;
+    padding: 20px;
+    width: 50%;
+    transition: all o.5s ease-out;
+  }
+  .mobile-icon{
+    display: block;
+    position: absolute;
+    font-size: 10px;
+    color: rgb(209, 154, 82);
+    background-color: cornsilk;
+    outline: none;
+    top: 15px;
+    right: 25px;
+    border: none;
+  }
+}
